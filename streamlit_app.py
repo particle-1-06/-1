@@ -1,6 +1,11 @@
-__import__('pysqlite3')
+# __import__('pysqlite3')
+# import sys
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+import sqlite3
+
+# 重定向 pysqlite3 导入到标准库的 sqlite3
+sys.modules['pysqlite3'] = sys.modules['sqlite3']
 import streamlit as st
 from langchain_openai import ChatOpenAI
 import os
