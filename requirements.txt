@@ -8,3 +8,5 @@ tiktoken
 langchain-core
 langchain-community
 python-dotenv
+langchain-chroma
+chromadb
