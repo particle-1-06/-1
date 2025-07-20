@@ -1,0 +1,7 @@
+# requirements.txt 示例
+streamlit
+langchain
+langchain-openai
+openai
+chromadb
+tiktoken
